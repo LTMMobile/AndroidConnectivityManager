@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
             }
             if (networkInfo.getType() == ConnectivityManager.TYPE_MOBILE) {
                 connexion.append(" + ").append("DATA MOBILE ").append( networkInfo.getSubtypeName() );
-
+            } else {
+                connexion.append(" + ").append("PAS DE DATA MOBILE ");
             }
         }
 
